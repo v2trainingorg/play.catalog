@@ -49,7 +49,7 @@ jobs:
         dotnet pack src/Play.Inventory.Contracts/ \
         --configuration Release \
         -p:PackageVersion=${{ needs.generate-version.outputs.new_version }} \
-        -p:RepositoryUrl=https://github.com/${{github.repository_owner}}/play.inventory \
+        -p:RepositoryUrl=https://github.com/${{github.repository_owner}}/play.catalog \
         -o packages
 
     - name: Publish
